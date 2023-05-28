@@ -8,7 +8,7 @@ import java.util.List;
 public class ResultViewRequest {
     private final int theNumberOfItemsInTheBackpack; //배낭에 채워진 아이템의 수
     private final int weightOfBackpack; //배낭의 현재 무게
-    private final List<Item> items; //아이템 3 가지
+    private final List<Item> items; //아이템 종류
 
     public ResultViewRequest(int theNumberOfItemsInTheBackpack, int weightOfBackpack, List<Item> items) {
         this.theNumberOfItemsInTheBackpack = theNumberOfItemsInTheBackpack;
@@ -29,7 +29,6 @@ public class ResultViewRequest {
     }
 
     public static ResultViewRequest from(CalculateResponse response){
-
         return new ResultViewRequest(
                 response.getNumberOfItem(),
                 response.getWeight(),
