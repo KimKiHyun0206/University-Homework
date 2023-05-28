@@ -9,6 +9,6 @@ public class NumberOfItemInputView {
 
     public ItemInputRequest getNumberOfItem() {
         System.out.print("[ System ] 아이템의 수를 입력해주세요  ");
-        return new ItemInputRequest(scanner.nextInt());
+        return ItemInputRequest.from(scanner.nextInt());
     }
 }

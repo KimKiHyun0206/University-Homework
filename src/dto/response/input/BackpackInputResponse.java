@@ -10,4 +10,8 @@ public class BackpackInputResponse {
     public int getBackpackSize() {
         return backpackSize;
     }
+
+    public static BackpackInputResponse from(int backpackSize){
+        return new BackpackInputResponse(backpackSize);
+    }
 }

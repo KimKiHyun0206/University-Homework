@@ -23,4 +23,8 @@ public class ItemInputResponse {
             System.out.println(item.toString());
         }
     }
+
+    public static ItemInputResponse from(List<Item> items){
+        return new ItemInputResponse(items);
+    }
 }

@@ -33,6 +33,6 @@ public class ItemInputView {
         }
 
 
-        return new ItemInputResponse(new SortByWeight().sort(result));
+        return ItemInputResponse.from(new SortByWeight().sort(result));
     }
 }

@@ -10,4 +10,8 @@ public class ItemInputRequest {
     public int getNumberOfItem() {
         return numberOfItem;
     }
+
+    public static ItemInputRequest from(int numberOfItem){
+        return new ItemInputRequest(numberOfItem);
+    }
 }
