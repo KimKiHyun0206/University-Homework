@@ -14,13 +14,13 @@ import view.output.ResultView;
 
 public class BackpackController {
     //view
-    private ItemInputView itemInputView = new ItemInputView();
-    private NumberOfItemInputView numberOfItemInputView = new NumberOfItemInputView();
-    private BackpackInputView backpackInputView = new BackpackInputView();
-    private ResultView resultView = new ResultView();
+    private final ItemInputView itemInputView = new ItemInputView();
+    private final NumberOfItemInputView numberOfItemInputView = new NumberOfItemInputView();
+    private final BackpackInputView backpackInputView = new BackpackInputView();
+    private final ResultView resultView = new ResultView();
 
     //service
-    private CalculateService calculateService = new CalculateService();
+    private final CalculateService calculateService = new CalculateService();
 
     public void calculateStart(){
         //input
