@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a46cac4d-7c53-48e5-a679-3541bec8b9f0" name="Changes" comment="update : homework 2" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Algorithm/Homework2" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Mp1EoGqOaXyP215jjggAURoAW7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;ToolWindowRun.ShowToolbar&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/kimkh/IdeaProjects/UniversityHomework&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Algorithm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Algorithm" />
+      <module name="Note" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FloydAlgorithm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FloydAlgorithm" />
+      <module name="Note" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Note" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Sample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Sample" />
+      <module name="Note" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VendingMachine" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="VendingMachine" />
+      <module name="Note" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.VendingMachine" />
+        <item itemvalue="Application.Sample" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.FloydAlgorithm" />
+        <item itemvalue="Application.Algorithm" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a46cac4d-7c53-48e5-a679-3541bec8b9f0" name="Changes" comment="" />
+      <created>1678449601263</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1678449601263</updated>
+      <workItem from="1678449602479" duration="2149000" />
+      <workItem from="1678518353862" duration="1149000" />
+      <workItem from="1678538470158" duration="25000" />
+      <workItem from="1678951176265" duration="6013000" />
+      <workItem from="1678972130861" duration="3000" />
+      <workItem from="1679030453671" duration="1839000" />
+      <workItem from="1679040239221" duration="21000" />
+      <workItem from="1679362129402" duration="3589000" />
+      <workItem from="1679445060192" duration="94000" />
+      <workItem from="1679555183152" duration="3336000" />
+      <workItem from="1679668403644" duration="7000" />
+      <workItem from="1679799647552" duration="641000" />
+      <workItem from="1679808687052" duration="2063000" />
+      <workItem from="1679832961593" duration="855000" />
+      <workItem from="1679877189170" duration="90000" />
+      <workItem from="1680164583218" duration="999000" />
+      <workItem from="1680765063977" duration="436000" />
+      <workItem from="1680949877233" duration="69000" />
+      <workItem from="1681376878565" duration="852000" />
+      <workItem from="1681388616974" duration="25000" />
+      <workItem from="1681433934907" duration="5000" />
+      <workItem from="1684396711919" duration="2180000" />
+      <workItem from="1684999458582" duration="15000" />
+      <workItem from="1685082582526" duration="3090000" />
+      <workItem from="1685085844279" duration="902000" />
+      <workItem from="1685097152462" duration="3225000" />
+      <workItem from="1685100430007" duration="5207000" />
+      <workItem from="1685113704335" duration="1724000" />
+      <workItem from="1685116491327" duration="387000" />
+      <workItem from="1685257124224" duration="4000" />
+      <workItem from="1685280976981" duration="18000" />
+    </task>
+    <task id="LOCAL-00001" summary="update : homework 2">
+      <created>1685116668106</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1685116668106</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update : homework 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="update : homework 2" />
+  </component>
+</project>
