@@ -34,6 +34,6 @@ public class Item {
 
     @Override
     public String toString() {
-        return "Id : " + id + ", Weight : " + weight + ", Value : " + value;
+        return "Id : " + id + "\t Weight : " + weight + "\t Value : " + value;
     }
 }
