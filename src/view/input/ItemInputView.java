@@ -25,7 +25,7 @@ public class ItemInputView {
 
             result.add(
                     new Item(
-                            i+1,
+                            i + 1,
                             Integer.parseInt(inputValue[0]),
                             Integer.parseInt(inputValue[1])
                     )

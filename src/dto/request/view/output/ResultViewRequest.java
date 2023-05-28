@@ -28,7 +28,7 @@ public class ResultViewRequest {
         return items;
     }
 
-    public static ResultViewRequest from(CalculateResponse response){
+    public static ResultViewRequest from(CalculateResponse response) {
         return new ResultViewRequest(
                 response.getNumberOfItem(),
                 response.getWeight(),

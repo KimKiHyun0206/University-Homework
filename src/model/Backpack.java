@@ -5,6 +5,7 @@ import view.output.BackpackSizeErrorView;
 
 public class Backpack {
     private final int size;
+
     public Backpack(int size) {
         this.size = backpackSizeValidation(size);
     }

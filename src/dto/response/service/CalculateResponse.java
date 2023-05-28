@@ -28,7 +28,7 @@ public class CalculateResponse {
         return numberOfItem;
     }
 
-    public static CalculateResponse from(CalculateResult result){
+    public static CalculateResponse from(CalculateResult result) {
         return new CalculateResponse(
                 result.getItems(),
                 result.getWeight(),

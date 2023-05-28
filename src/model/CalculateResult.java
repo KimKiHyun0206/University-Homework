@@ -16,7 +16,7 @@ public class CalculateResult {
         }
     }
 
-    public int getWeight(){
+    public int getWeight() {
         int sum = 0;
 
         for (Item item : items) {

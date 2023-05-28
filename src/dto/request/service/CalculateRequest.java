@@ -25,7 +25,7 @@ public class CalculateRequest {
         return backpack.getSize();
     }
 
-    public static CalculateRequest from(ItemInputResponse inputResponse, BackpackInputResponse backpackInputResponse){
+    public static CalculateRequest from(ItemInputResponse inputResponse, BackpackInputResponse backpackInputResponse) {
         ItemSet instanceItemSet = new ItemSet();
         List<Item> items = inputResponse.getItems();
 
