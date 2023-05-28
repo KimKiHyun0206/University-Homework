@@ -22,7 +22,7 @@ public class BackpackController {
     //service
     private final CalculateService calculateService = new CalculateService();
 
-    public void calculateStart(){
+    public void calculateStart() {
         //input
         ItemInputRequest itemInputRequest = numberOfItemInputView.getNumberOfItem();
         ItemInputResponse itemInputResponse = itemInputView.input(itemInputRequest);
