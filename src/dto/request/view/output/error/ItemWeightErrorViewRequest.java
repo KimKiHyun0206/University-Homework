@@ -10,4 +10,8 @@ public class ItemWeightErrorViewRequest {
     public int getWeight() {
         return weight;
     }
+
+    public static ItemWeightErrorViewRequest from(int weight){
+        return new ItemWeightErrorViewRequest(weight);
+    }
 }

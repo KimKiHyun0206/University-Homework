@@ -17,7 +17,7 @@ public class Item {
     private int weightValidation(int weight) {
         if (weight > 50 | weight < 10) {
             new ItemWeightErrorView().alert(
-                    new ItemWeightErrorViewRequest(weight)
+                    ItemWeightErrorViewRequest.from(weight)
             );
             return 0;
         }

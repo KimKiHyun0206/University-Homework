@@ -10,4 +10,8 @@ public class ItemDuplicateErrorViewRequest {
     public int getDuplicateId() {
         return duplicateId;
     }
+
+    public static ItemDuplicateErrorViewRequest from(int duplicateId){
+        return new ItemDuplicateErrorViewRequest(duplicateId);
+    }
 }
