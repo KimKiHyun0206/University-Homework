@@ -14,7 +14,7 @@ public class ItemInputView {
     private List<Item> result = new LinkedList<>();
 
     public ItemInputView() {
-        System.out.println("[ System ] 아이템 입력은 띄어쓰기로 해주십시오 ( 무게-가치 )");
+        System.out.println("[ System ] 아이템 입력은 띄어쓰기로 해주십시오 ( 무게 가치 )");
     }
 
     public ItemInputResponse input(ItemInputRequest request) {
