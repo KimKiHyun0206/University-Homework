@@ -1,6 +1,6 @@
 package model;
 
-import dto.request.view.output.BackpackSizeErrorViewRequest;
+import dto.request.view.output.error.BackpackSizeErrorViewRequest;
 import view.output.BackpackSizeErrorView;
 
 public class Backpack {

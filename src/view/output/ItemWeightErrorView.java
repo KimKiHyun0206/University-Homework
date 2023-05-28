@@ -1,6 +1,6 @@
 package view.output;
 
-import dto.request.view.output.ItemWeightErrorViewRequest;
+import dto.request.view.output.error.ItemWeightErrorViewRequest;
 
 public class ItemWeightErrorView {
     public void alert(ItemWeightErrorViewRequest request){

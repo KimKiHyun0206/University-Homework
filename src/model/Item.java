@@ -1,6 +1,6 @@
 package model;
 
-import dto.request.view.output.ItemWeightErrorViewRequest;
+import dto.request.view.output.error.ItemWeightErrorViewRequest;
 import view.output.ItemWeightErrorView;
 
 public class Item {

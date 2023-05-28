@@ -1,6 +1,6 @@
 package view.output;
 
-import dto.request.view.output.BackpackSizeErrorViewRequest;
+import dto.request.view.output.error.BackpackSizeErrorViewRequest;
 
 public class BackpackSizeErrorView {
     public void alertSizeError(BackpackSizeErrorViewRequest request) {

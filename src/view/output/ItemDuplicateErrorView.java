@@ -1,6 +1,6 @@
 package view.output;
 
-import dto.request.view.output.ItemDuplicateErrorViewRequest;
+import dto.request.view.output.error.ItemDuplicateErrorViewRequest;
 
 public class ItemDuplicateErrorView {
     public void alertDuplicateError(ItemDuplicateErrorViewRequest request){

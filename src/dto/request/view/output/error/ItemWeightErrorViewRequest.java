@@ -1,4 +1,4 @@
-package dto.request.view.output;
+package dto.request.view.output.error;
 
 public class ItemWeightErrorViewRequest {
     private final int weight;
