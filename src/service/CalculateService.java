@@ -16,44 +16,44 @@ public class CalculateService {
         ItemSet itemSet = request.getItemSet();
 
         useItem.add(itemSet.getItem(0));
-        for (int i = 0; i < request.getItemSet().getItemSetSize(); i++) {
+        for (int numberOfItem = 0; numberOfItem < request.getItemSet().getItemSetSize(); numberOfItem++) {
             CalculateResult instanceCalculateResult = new CalculateResult();
 
-            for (int j = 1; j < request.getBackpackSize() + 1; j++) {
-                int backpackSize = j;
+            for (int backpackSize = 1; backpackSize < request.getBackpackSize() + 1; backpackSize++) {
+                int instanceBackpackSize = backpackSize;
 
-                for (int k = useItem.size() - 1; k >= 0; k--) {     //크기가 작은 것부터 비교하기 위해 뒤에서부터 시작함
-                    //System.out.print("물건 비교 : " + useItem.get(k).getId() + " ");
-                    if (useItem.get(k).getWeight() <= backpackSize) {
-                        instanceCalculateResult.addItem(useItem.get(k), j);
-                        backpackSize -= useItem.get(k).getWeight();
+                for (int compareItemId = useItem.size() - 1; compareItemId >= 0; compareItemId--) {     //크기가 작은 것부터 비교하기 위해 뒤에서부터 시작함
+                    //System.out.print("물건 비교 : " + useItem.get(compareItemId).getId() + " ");
+                    if (useItem.get(compareItemId).getWeight() <= instanceBackpackSize) {
+                        instanceCalculateResult.addItem(useItem.get(compareItemId), backpackSize);
+                        instanceBackpackSize -= useItem.get(compareItemId).getWeight();
                     }
                 }
                 calculateResult = compareValue(calculateResult, instanceCalculateResult, request.getBackpackSize());
-                //System.out.println("  info : useItemNumber " + (i + 1) + ", backpackSize " + j + " = " + instanceCalculateResult.getValue());
+                //System.out.println("  info : useItemNumber " + (numberOfItem + 1) + ", instanceBackpackSize " + backpackSize + " = " + instanceCalculateResult.getValue());
             }
-            if (i < request.getItemSet().getItemSetSize() - 1) {
-                useItem.add(itemSet.getItem(i + 1));
+            if (numberOfItem < request.getItemSet().getItemSetSize() - 1) {
+                useItem.add(itemSet.getItem(numberOfItem + 1));
             }
         }
 
         return CalculateResponse.from(calculateResult);
     }
 
-    private CalculateResult compareValue(CalculateResult oldValue, CalculateResult newValue, int backpackSize) {
+    private CalculateResult compareValue(CalculateResult oldResult, CalculateResult newResult, int backpackSize) {
         if (
-                isNewValueIsMoreExpensive(oldValue, newValue) && isNewValueWeightValidate(newValue, backpackSize)
+                isNewValueIsMoreExpensive(oldResult, newResult) && isNewValueWeightValidate(newResult, backpackSize)
         ) {
-            return newValue;
+            return newResult;
         }
-        return oldValue;
+        return oldResult;
     }
 
-    private boolean isNewValueIsMoreExpensive(CalculateResult oldValue, CalculateResult newValue) {
-        return oldValue.getValue() < newValue.getValue();
+    private boolean isNewValueIsMoreExpensive(CalculateResult oldResult, CalculateResult newResult) {
+        return oldResult.getValue() < newResult.getValue();
     }
 
-    private boolean isNewValueWeightValidate(CalculateResult newValue, int backpackSize) {
-        return newValue.getWeight() <= backpackSize;
+    private boolean isNewValueWeightValidate(CalculateResult newResult, int backpackSize) {
+        return newResult.getWeight() <= backpackSize;
     }
 }
