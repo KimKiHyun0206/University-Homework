@@ -13,7 +13,7 @@ public class Backpack {
     private int backpackSizeValidation(int size) {          //배낭 용량을 검사한다
         if (size < 50 | size > 100) {
             new BackpackSizeErrorView().alertSizeError(
-                    new BackpackSizeErrorViewRequest(size)
+                    BackpackSizeErrorViewRequest.from(size)
             );
             return 100;                                     //오류 발생 시 무게를 100으로 고정한다
         }
