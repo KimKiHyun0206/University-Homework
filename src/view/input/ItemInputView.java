@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class ItemInputView {
-    private Scanner scanner = new Scanner(System.in);
+    private final Scanner scanner = new Scanner(System.in);
     private List<Item> result = new LinkedList<>();
 
     public ItemInputView() {
