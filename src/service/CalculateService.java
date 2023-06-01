@@ -23,14 +23,12 @@ public class CalculateService {
                 int instanceBackpackSize = backpackSize;
 
                 for (int compareItemId = useItem.size() - 1; compareItemId >= 0; compareItemId--) {              //크기가 작은 것부터 비교하기 위해 뒤에서부터 시작함
-                    //System.out.print("물건 비교 : " + useItem.get(compareItemId).getId() + " ");
                     if (useItem.get(compareItemId).getWeight() <= instanceBackpackSize) {
                         instanceCalculateResult.addItem(useItem.get(compareItemId), backpackSize);
                         instanceBackpackSize -= useItem.get(compareItemId).getWeight();
                     }
                 }
                 calculateResult = compareValue(calculateResult, instanceCalculateResult, request.getBackpackSize());
-                //System.out.println("  info : useItemNumber " + (numberOfItem + 1) + ", instanceBackpackSize " + backpackSize + " = " + instanceCalculateResult.getValue());
             }
             if (numberOfItem < request.getItemSet().getItemSetSize() - 1) {
                 useItem.add(itemSet.getItem(numberOfItem + 1));
