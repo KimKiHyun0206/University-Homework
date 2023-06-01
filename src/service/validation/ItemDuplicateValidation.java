@@ -1,5 +1,6 @@
 package service.validation;
 
+import dto.response.input.ItemInputResponse;
 import model.Item;
 import view.output.ItemDuplicateErrorView;
 
@@ -8,7 +9,8 @@ import java.util.List;
 import java.util.Set;
 
 public class ItemDuplicateValidation {
-    public void check(List<Item> items){
+    public void check(ItemInputResponse response){
+        List<Item> items = response.getItems();
         Set<Integer> weightCheck = new HashSet<>();
         Set<Integer> valueCheck = new HashSet<>();
 

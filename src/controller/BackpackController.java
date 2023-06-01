@@ -30,9 +30,8 @@ public class BackpackController {
         ItemInputResponse itemInputResponse = itemInputView.input(itemInputRequest);
         BackpackInputResponse backpackInputResponse = backpackInputView.input();
 
-        itemDuplicateValidation.check(itemInputResponse.getItems());
-
         //service
+        itemDuplicateValidation.check(itemInputResponse);
         CalculateResponse calculateResponse =
                 calculateService.calculate(
                         CalculateRequest.from(itemInputResponse, backpackInputResponse)
