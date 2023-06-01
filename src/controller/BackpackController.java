@@ -7,6 +7,7 @@ import dto.response.input.BackpackInputResponse;
 import dto.response.input.ItemInputResponse;
 import dto.response.service.CalculateResponse;
 import service.CalculateService;
+import service.validation.ItemDuplicateValidation;
 import view.input.BackpackInputView;
 import view.input.ItemInputView;
 import view.input.NumberOfItemInputView;
@@ -21,12 +22,15 @@ public class BackpackController {
 
     //service
     private final CalculateService calculateService = new CalculateService();
+    private final ItemDuplicateValidation itemDuplicateValidation = new ItemDuplicateValidation();
 
     public void calculateStart() {
         //input
         ItemInputRequest itemInputRequest = numberOfItemInputView.getNumberOfItem();
         ItemInputResponse itemInputResponse = itemInputView.input(itemInputRequest);
         BackpackInputResponse backpackInputResponse = backpackInputView.input();
+
+        itemDuplicateValidation.check(itemInputResponse.getItems());
 
         //service
         CalculateResponse calculateResponse =

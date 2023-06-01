@@ -1,6 +1,7 @@
 package model;
 
 import dto.request.view.output.error.ItemDuplicateErrorViewRequest;
+import service.validation.ItemDuplicateValidation;
 import view.output.ItemDuplicateErrorView;
 
 import java.util.LinkedList;
