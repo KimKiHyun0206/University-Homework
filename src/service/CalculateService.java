@@ -52,6 +52,6 @@ public class CalculateService {
     }
 
     private boolean isNewValueWeightValidate(CalculateResult newResult, int backpackSize) {
-        return newResult.getWeight() <= backpackSize;
+        return newResult.getAllItemsWeight() <= backpackSize;
     }
 }

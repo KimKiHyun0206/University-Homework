@@ -3,8 +3,8 @@ package model;
 import dto.request.view.output.error.BackpackSizeErrorViewRequest;
 import view.output.BackpackSizeErrorView;
 
-public class Backpack {
-    private final int size;
+public class Backpack {         //배낭에 대한 정보를 담고 있는 Model
+    private final int size;     //배낭의 크기
 
     public Backpack(int size) {
         this.size = backpackSizeValidation(size);
@@ -15,7 +15,7 @@ public class Backpack {
             new BackpackSizeErrorView().alertSizeError(
                     BackpackSizeErrorViewRequest.from(size)
             );
-            return 100;                                     //오류 발생 시 무게를 100으로 고정한다
+            System.exit(0);                           //에러 검출 시 프로그램 종료
         }
         return size;
     }
