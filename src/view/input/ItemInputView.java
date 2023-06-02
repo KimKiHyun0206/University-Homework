@@ -21,7 +21,6 @@ public class ItemInputView {                                                    
 
             result.add(                                                             //result 에 Item 을 넣는다
                     new Item(                                                       //inputValue 를 바탕으로 새로운 Item 생성
-                            i + 1,
                             Integer.parseInt(inputValue[0]),
                             Integer.parseInt(inputValue[1])
                     )

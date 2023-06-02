@@ -21,6 +21,10 @@ public class CalculateRequest {                                     //계산을 
         return itemSet;
     }
 
+    public int getItemSetSize(){
+        return itemSet.getItemSetSize();
+    }
+
     public int getBackpackSize() {
         return backpack.getSize();
     }

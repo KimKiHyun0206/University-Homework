@@ -4,12 +4,10 @@ import dto.request.view.output.error.ItemWeightErrorViewRequest;
 import view.output.ItemWeightErrorView;
 
 public class Item {
-    private final int id;                           //Item 의 id
     private final int weight;                       //Item 의 무게
     private final int value;                        //Item 의 가치
 
-    public Item(int id, int weight, int value) {
-        this.id = id;
+    public Item(int weight, int value) {
         this.weight = weightValidation(weight);
         this.value = value;
     }
@@ -30,10 +28,5 @@ public class Item {
 
     public int getValue() {
         return value;
-    }
-
-    @Override
-    public String toString() {
-        return "Id : " + id + "\t Weight : " + weight + "\t Value : " + value;
     }
 }

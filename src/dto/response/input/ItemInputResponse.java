@@ -16,14 +16,6 @@ public class ItemInputResponse {        //입력 받은 Item 들에 대한 정�
         return items;
     }
 
-    //testMethod
-    private void showItems(){
-        System.out.println("[  ITEMS  ]");
-        for (Item item : items) {
-            System.out.println(item.toString());
-        }
-    }
-
     /*
     한 번에 객체를 매핑하기 위한 매핑 메소드
     ItemInputResponse 에 필요한 정보들을 받아서 매핑해준다
