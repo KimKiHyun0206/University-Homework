@@ -1,9 +1,10 @@
 package model;
 
+import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.List;
 
-public class CalculateResult {                              //계산 결과에 대한 Model
+public class CalculateResult implements Comparable<Integer> {                              //계산 결과에 대한 Model
     private final List<Item> items = new LinkedList<>();    //계산 결과 배낭에 담긴 Item
     private int value = 0;                                  //배낭에 담긴 item 들의 가치
     private int numberOfItem = 0;                           //배낭에 담긴 item 들의 갯수
@@ -15,6 +16,12 @@ public class CalculateResult {                              //계산 결과에 �
             value += item.getValue();                       //배낭에 담긴 item 의 가치를 새로 넣은 item 의 가치만큼 더한다
             numberOfItem = items.size();                    //배낭에 item 이 담겼으니 배낭에 담긴 item 의 갯수를 갱신한다
         }
+    }
+
+    public void sumCalculateResult(CalculateResult result){
+        items.addAll(result.getItems());
+        this.value += result.getValue();
+        this.numberOfItem += result.getNumberOfItem();
     }
 
     public int getAllItemsWeight() {                                //배낭에 담긴 모든 item 의 무게를 합해서 리턴한다
@@ -37,5 +44,10 @@ public class CalculateResult {                              //계산 결과에 �
 
     public int getNumberOfItem() {
         return numberOfItem;
+    }
+
+    @Override
+    public int compareTo(Integer o) {
+        return this.value;
     }
 }
