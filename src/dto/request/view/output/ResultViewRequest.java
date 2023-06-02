@@ -24,10 +24,14 @@ public class ResultViewRequest {                            //결과를 보여�
         return weightOfBackpack;
     }
 
-    public List<Item> getItems() {
-        return items;
-    }
+    public int getValue(){
+        int sum = 0;
+        for(Item item : this.items){
+            sum += item.getValue();
+        }
 
+        return sum;
+    }
     /*
     한 번에 객체를 매핑하기 위한 매핑 메소드
     ResultViewRequest 에 필요한 정보들을 받아서 매핑해준다
