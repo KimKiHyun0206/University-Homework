@@ -5,8 +5,8 @@ public class CalculateResponse {        //계산 결과를 알리기 위한 Resp
     private final int weight;           //배낭의 무게
     private final int numberOfItem;     //들어간 아이템의 갯수
 
-    public CalculateResponse(int items, int weight, int numberOfItem) {
-        this.value = items;
+    public CalculateResponse(int value, int weight, int numberOfItem) {
+        this.value = value;
         this.weight = weight;
         this.numberOfItem = numberOfItem;
     }

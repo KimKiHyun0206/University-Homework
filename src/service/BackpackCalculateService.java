@@ -38,9 +38,9 @@ public class BackpackCalculateService {     //교수님 화이팅
         }
 
         return new CalculateResponse(
-                putItemCount,
+                storage[numberOfItem][backpackSize],
                 backpackSize - leftSizeOfBackpack,
-                storage[numberOfItem][backpackSize]
+                putItemCount
         );
     }
 }
